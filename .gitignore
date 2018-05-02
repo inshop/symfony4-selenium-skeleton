@@ -11,3 +11,5 @@
 ###< symfony/phpunit-bridge ###
 
 .idea
+.composer
+.bash_history
