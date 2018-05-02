@@ -20,10 +20,5 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN docker-php-ext-install intl
 RUN docker-php-ext-install zip
 
-# PHPUnit
-RUN wget https://phar.phpunit.de/phpunit-7.phar \
-    && chmod +x phpunit-7.phar \
-    && mv phpunit-7.phar /usr/local/bin/phpunit
-
 #clean
 RUN apt-get clean; rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/*
